@@ -1,0 +1,18 @@
+# Salesforce
+.sf/
+.sfdx/
+.localdevserver/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Node (if LWC dev)
+node_modules/
+
+# Logs
+*.log
