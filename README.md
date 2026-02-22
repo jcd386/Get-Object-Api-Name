@@ -40,7 +40,8 @@ In Flow Builder, add an **Action** element and search for **"Get Object API Name
 **Outputs:**
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| Object API Name | String | The SObject API name (e.g., `Account`) |
+| Object API Name | String | The SObject API name (e.g., `myns__Custom_Object__c`) |
+| Object API Name Without Namespace | String | The API name without namespace prefix (e.g., `Custom_Object__c`) |
 | Success | Boolean | Whether the operation succeeded |
 | Error Message | String | Error details if the operation failed |
 

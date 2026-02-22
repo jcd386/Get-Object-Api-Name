@@ -9,6 +9,9 @@ public with sharing class GetObjectApiName {
         @InvocableVariable(label='Object API Name')
         public String objectApiName;
 
+        @InvocableVariable(label='Object API Name Without Namespace')
+        public String objectApiNameWithoutNamespace;
+
         @InvocableVariable(label='Success')
         public Boolean success;
 
@@ -40,6 +43,7 @@ public with sharing class GetObjectApiName {
             }
             Id parsedId = Id.valueOf(input.recordId);
             output.objectApiName = parsedId.getSObjectType().getDescribe().getName();
+            output.objectApiNameWithoutNamespace = parsedId.getSObjectType().getDescribe().getLocalName();
             output.success = true;
         } catch (Exception e) {
             output.success = false;
